@@ -1,0 +1,203 @@
+\hypertarget{bound__function_8h}{\section{include/bound\-\_\-function.h \-File \-Reference}
+\label{bound__function_8h}\index{include/bound\-\_\-function.\-h@{include/bound\-\_\-function.\-h}}
+}
+\-Library for calculation of \-Bound \-Function.  
+
+\subsection*{Dependencies}
+{\ttfamily \#include \char`\"{}entropy\-\_\-tools.\-h\char`\"{}}\*\\
+{\ttfamily \#include $<$gsl/gsl\-\_\-roots.\-h$>$}\*\\
+
+\-Include dependency graph for bound\-\_\-function.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bound__function_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{bound__function_8h__dep__incl}
+\end{center}
+\end{figure}
+
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bound__function_8h_a79a629c80cd09a3bbe52473b9c0c626a}{\-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{bound__function_8h_a3861f0ee3f0966eaa504ae6e96a5538b}{pp} (double l, \hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_a4af35613987196849ea6b261a6d9939d}{dif\-\_\-pp} (double l, void $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_a7e59befac1de8863e7bc694243fdc9c2}{pp\-\_\-df} (double l, \hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_a3af48831cb33dc02f5f72632592c8fc5}{reduced\-\_\-\-Ba} (double l, \hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_a18b7d91851ce5a2f94da2cb6ed20bc76}{reduced\-\_\-\-Ba\-\_\-df} (double l, void $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_ae39e0703a1b025b97620c2fe2a17aed9}{l\-\_\-max} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_a545abfeb71c0648db0a91dfa3e345e57}{\-Optimal\-\_\-reduced\-\_\-\-Ba} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_ab965279f87e73cd3620cb491983ca3c4}{dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba} (double a, void $\ast$params)
+\item 
+double \hyperlink{bound__function_8h_a806424a846d7c01ff8d78df2cf26c3ed}{find\-\_\-coefficient} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\end{DoxyCompactItemize}
+\subsection{\-Detailed \-Description}
+\-Library for calculation of \-Bound \-Function. \-This \-Library calculate theorical \-Bound \-Function, its optimal value for a coefficient a of min B\_a and find, for a work factor wf, the coefficient a for the equation min B\_a = wf for k, w fixed. 
+
+\-Definition in file \hyperlink{bound__function_8h}{bound\-\_\-function.\-h}.
+
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{bound__function_8h_a79a629c80cd09a3bbe52473b9c0c626a}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!\-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H@{\-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H}}
+\index{\-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H@{\-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{\-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-O\-U\-N\-D\-\_\-\-F\-U\-N\-T\-I\-O\-N\-\_\-\-H}}}\label{bound__function_8h_a79a629c80cd09a3bbe52473b9c0c626a}
+
+
+\-Definition at line 31 of file bound\-\_\-function.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+
+\hypertarget{bound__function_8h_a3861f0ee3f0966eaa504ae6e96a5538b}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!pp@{pp}}
+\index{pp@{pp}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{pp}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf pp} (
+\begin{DoxyParamCaption}
+\item[{double}]{l, }
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a3861f0ee3f0966eaa504ae6e96a5538b}
+
+
+\-Calculates the p such that 2$^\wedge$l=binomial(k+l,ap). 
+
+\-Declaration at line 42 of file bound\-\_\-function.\-h.
+
+\hypertarget{bound__function_8h_a4af35613987196849ea6b261a6d9939d}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!dif\-\_\-pp@{dif\-\_\-pp}}
+\index{dif\-\_\-pp@{dif\-\_\-pp}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{dif\-\_\-pp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dif\-\_\-pp} (
+\begin{DoxyParamCaption}
+\item[{double}]{l, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a4af35613987196849ea6b261a6d9939d}
+
+
+the diference pp(l,a)-\/w. 
+
+\-Declaration at line 49 of file bound\-\_\-function.\-h.
+
+\hypertarget{bound__function_8h_a7e59befac1de8863e7bc694243fdc9c2}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!pp\-\_\-df@{pp\-\_\-df}}
+\index{pp\-\_\-df@{pp\-\_\-df}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{pp\-\_\-df}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pp\-\_\-df} (
+\begin{DoxyParamCaption}
+\item[{double}]{l, }
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a7e59befac1de8863e7bc694243fdc9c2}
+
+
+\-Derivate of function pp. 
+
+\-Declaration at line 56 of file bound\-\_\-function.\-h.
+
+\hypertarget{bound__function_8h_a3af48831cb33dc02f5f72632592c8fc5}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!reduced\-\_\-\-Ba@{reduced\-\_\-\-Ba}}
+\index{reduced\-\_\-\-Ba@{reduced\-\_\-\-Ba}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{reduced\-\_\-\-Ba}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf reduced\-\_\-\-Ba} (
+\begin{DoxyParamCaption}
+\item[{double}]{l, }
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a3af48831cb33dc02f5f72632592c8fc5}
+
+
+\-Reduced version of \-Ba(l,p). This function will achieve the same minimum value of function \-Ba(l,p). 
+
+\-Declaration at line 65 of file bound\-\_\-function.\-h.
+
+
+\hypertarget{bound__function_8h_a18b7d91851ce5a2f94da2cb6ed20bc76}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!reduced\-\_\-\-Ba\-\_\-df@{reduced\-\_\-\-Ba\-\_\-df}}
+\index{reduced\-\_\-\-Ba\-\_\-df@{reduced\-\_\-\-Ba\-\_\-df}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{reduced\-\_\-\-Ba\-\_\-df}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf reduced\-\_\-\-Ba\-\_\-df} (
+\begin{DoxyParamCaption}
+\item[{double}]{l, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a18b7d91851ce5a2f94da2cb6ed20bc76}
+
+
+\-Derivate of function reduced\-\_\-\-Ba. 
+
+\-Declaration at line 72 of file bound\-\_\-function.\-h.
+
+\hypertarget{bound__function_8h_ae39e0703a1b025b97620c2fe2a17aed9}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!l\-\_\-max@{l\-\_\-max}}
+\index{l\-\_\-max@{l\-\_\-max}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{l\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf l\-\_\-max} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_ae39e0703a1b025b97620c2fe2a17aed9}
+
+
+\-Obtains the maximum value of l such \-Ba is calculable. 
+
+\-Declaration at line 79 of file bound\-\_\-function.\-h.
+
+
+\hypertarget{bound__function_8h_a545abfeb71c0648db0a91dfa3e345e57}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!\-Optimal\-\_\-reduced\-\_\-\-Ba@{\-Optimal\-\_\-reduced\-\_\-\-Ba}}
+\index{\-Optimal\-\_\-reduced\-\_\-\-Ba@{\-Optimal\-\_\-reduced\-\_\-\-Ba}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{\-Optimal\-\_\-reduced\-\_\-\-Ba}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-reduced\-\_\-\-Ba} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a545abfeb71c0648db0a91dfa3e345e57}
+
+
+\-Obtains the minimum value of \-Ba. 
+
+\-Declaration at line 86 of file bound\-\_\-function.\-h.
+
+
+
+\hypertarget{bound__function_8h_ab965279f87e73cd3620cb491983ca3c4}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba@{dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba}}
+\index{dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba@{dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf dif\-\_\-\-Optimal\-\_\-reduced\-\_\-\-Ba} (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_ab965279f87e73cd3620cb491983ca3c4}
+
+
+\-The difference \-Optimal\-\_\-reduced\-\_\-\-Ba -\/ workfactor. 
+
+\-Declaration at line 93 of file bound\-\_\-function.\-h.
+
+
+
+\hypertarget{bound__function_8h_a806424a846d7c01ff8d78df2cf26c3ed}{\index{bound\-\_\-function.\-h@{bound\-\_\-function.\-h}!find\-\_\-coefficient@{find\-\_\-coefficient}}
+\index{find\-\_\-coefficient@{find\-\_\-coefficient}!bound_function.h@{bound\-\_\-function.\-h}}
+\subsubsection[{find\-\_\-coefficient}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf find\-\_\-coefficient} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{bound__function_8h_a806424a846d7c01ff8d78df2cf26c3ed}
+
+
+\-Find a such that reduced\-\_\-\-Ba\-\_\-min(a)=wf. 
+
+\-Declaration at line 100 of file bound\-\_\-function.\-h.
+
+
+
+

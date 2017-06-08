@@ -1,0 +1,92 @@
+\hypertarget{wf__bjmm_8h}{\section{include/wf\-\_\-bjmm.h \-File \-Reference}
+\label{wf__bjmm_8h}\index{include/wf\-\_\-bjmm.\-h@{include/wf\-\_\-bjmm.\-h}}
+}
+
+
+\-Library for calculation of \-B\-J\-M\-M's \-Work \-Factor.  
+
+\subsection*{Libraries}
+
+{\ttfamily \#include \char`\"{}entropy\-\_\-tools.\-h\char`\"{}}\*\\
+
+\-Include dependency graph for wf\-\_\-bjmm.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__bjmm_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__bjmm_8h__dep__incl}
+\end{center}
+\end{figure}
+
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{wf__bjmm_8h_afb4fca4c10e792952c64c8d712f44947}{wf\-\_\-\-B\-J\-M\-M} (const gsl\-\_\-vector $\ast$v, void $\ast$paramslp)
+\item 
+double \hyperlink{wf__bjmm_8h_a57582cc5476f2d16374afc1052b5a492}{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12} (const gsl\-\_\-vector $\ast$vv, void $\ast$params)
+\item 
+double \hyperlink{wf__bjmm_8h_aa1a2efb0ac81db558018172e12d0958d}{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Library for calculation of \-B\-J\-M\-M's \-Work \-Factor. 
+
+\-Definition in file \hyperlink{wf__bjmm_8h_source}{wf\-\_\-bjmm.\-h}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{wf__bjmm_8h_aa1a2efb0ac81db558018172e12d0958d}{\index{wf\-\_\-bjmm.\-h@{wf\-\_\-bjmm.\-h}!\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M@{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M}}
+\index{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M@{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M}!wf_bjmm.h@{wf\-\_\-bjmm.\-h}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__bjmm_8h_aa1a2efb0ac81db558018172e12d0958d}
+
+
+\-Optimal \-Work \-Factor of \-B\-J\-M\-M's algorithm. 
+
+\-Parameters k, w, \-N in params. \-It saves \-Optimal \-Parameters l, p, p1 and p2 in params. 
+
+\-Definition at line 133 of file wf\-\_\-bjmm.\-c.
+
+\hypertarget{wf__bjmm_8h_a57582cc5476f2d16374afc1052b5a492}{\index{wf\-\_\-bjmm.\-h@{wf\-\_\-bjmm.\-h}!\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12@{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12}}
+\index{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12@{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12}!wf_bjmm.h@{wf\-\_\-bjmm.\-h}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-B\-J\-M\-M\-\_\-p12} (
+\begin{DoxyParamCaption}
+\item[{const gsl\-\_\-vector $\ast$}]{vv, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__bjmm_8h_a57582cc5476f2d16374afc1052b5a492}
+
+
+\-Optimal \-Work \-Factor of \-B\-J\-M\-M's algorithm for l and p fixed. 
+
+\-Parameters l and p in vv and k, w, \-N in params. \-It saves \-Optimal \-Parameters p1 and p2 in paramslp. 
+
+\-Definition at line 60 of file wf\-\_\-bjmm.\-c.
+
+\hypertarget{wf__bjmm_8h_afb4fca4c10e792952c64c8d712f44947}{\index{wf\-\_\-bjmm.\-h@{wf\-\_\-bjmm.\-h}!wf\-\_\-\-B\-J\-M\-M@{wf\-\_\-\-B\-J\-M\-M}}
+\index{wf\-\_\-\-B\-J\-M\-M@{wf\-\_\-\-B\-J\-M\-M}!wf_bjmm.h@{wf\-\_\-bjmm.\-h}}
+\subsubsection[{wf\-\_\-\-B\-J\-M\-M}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf wf\-\_\-\-B\-J\-M\-M} (
+\begin{DoxyParamCaption}
+\item[{const gsl\-\_\-vector $\ast$}]{v, }
+\item[{void $\ast$}]{paramslp}
+\end{DoxyParamCaption}
+)}}\label{wf__bjmm_8h_afb4fca4c10e792952c64c8d712f44947}
+
+
+\-Definition at line 29 of file wf\-\_\-bjmm.\-c.
+

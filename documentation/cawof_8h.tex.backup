@@ -1,0 +1,53 @@
+\hypertarget{cawof_8h}{\section{src/cawof.h \-File \-Reference}
+\label{cawof_8h}\index{src/cawof.\-h@{src/cawof.\-h}}
+}
+
+
+\-Definiton of constants for the principal program.  
+
+
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cawof_8h_a44493dbd21a529ec6fdb2da73a35ac70}{\-P\-R\-O\-G\-\_\-\-N\-A\-M\-E}~\char`\"{}\-Ca\-Wo\-F\char`\"{}
+\item 
+\#define \hyperlink{cawof_8h_a50ef2e611dcbc13c41a2bb2556009c61}{\-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}~1
+\item 
+\#define \hyperlink{cawof_8h_ace7590a102aed635f31ae83217dc0900}{\-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N}~0
+\item 
+\#define \hyperlink{cawof_8h_a794b131c8e431a71c4b92a90c8569ca2}{\-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N}~0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Definiton of constants for the principal program. Definition in file \hyperlink{cawof_8h_source}{cawof.\-h}.
+
+\subsection{\-Define \-Documentation}
+\hypertarget{cawof_8h_a44493dbd21a529ec6fdb2da73a35ac70}{\index{cawof.\-h@{cawof.\-h}!\-P\-R\-O\-G\-\_\-\-N\-A\-M\-E@{\-P\-R\-O\-G\-\_\-\-N\-A\-M\-E}}
+\index{\-P\-R\-O\-G\-\_\-\-N\-A\-M\-E@{\-P\-R\-O\-G\-\_\-\-N\-A\-M\-E}!cawof.h@{cawof.\-h}}
+\subsubsection[{\-P\-R\-O\-G\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-R\-O\-G\-\_\-\-N\-A\-M\-E}~\char`\"{}\-Ca\-Wo\-F\char`\"{}}}\label{cawof_8h_a44493dbd21a529ec6fdb2da73a35ac70}
+
+
+\-Definition at line 30 of file cawof.\-h.
+
+\hypertarget{cawof_8h_a794b131c8e431a71c4b92a90c8569ca2}{\index{cawof.\-h@{cawof.\-h}!\-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N@{\-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N}}
+\index{\-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N@{\-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N}!cawof.h@{cawof.\-h}}
+\subsubsection[{\-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-R\-O\-G\-\_\-\-R\-E\-V\-I\-S\-I\-O\-N}~0}}\label{cawof_8h_a794b131c8e431a71c4b92a90c8569ca2}
+
+
+\-Definition at line 34 of file cawof.\-h.
+
+\hypertarget{cawof_8h_ace7590a102aed635f31ae83217dc0900}{\index{cawof.\-h@{cawof.\-h}!\-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N@{\-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N}}
+\index{\-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N@{\-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N}!cawof.h@{cawof.\-h}}
+\subsubsection[{\-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-R\-O\-G\-\_\-\-S\-U\-B\-V\-E\-R\-S\-I\-O\-N}~0}}\label{cawof_8h_ace7590a102aed635f31ae83217dc0900}
+
+
+\-Definition at line 33 of file cawof.\-h.
+
+\hypertarget{cawof_8h_a50ef2e611dcbc13c41a2bb2556009c61}{\index{cawof.\-h@{cawof.\-h}!\-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N@{\-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{\-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N@{\-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}!cawof.h@{cawof.\-h}}
+\subsubsection[{\-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-R\-O\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}~1}}\label{cawof_8h_a50ef2e611dcbc13c41a2bb2556009c61}
+
+
+\-Definition at line 32 of file cawof.\-h.
+

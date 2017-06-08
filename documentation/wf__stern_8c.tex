@@ -1,0 +1,56 @@
+\hypertarget{wf__stern_8c}{\section{src/wf\-\_\-stern.c \-File \-Reference}
+\label{wf__stern_8c}\index{src/wf\-\_\-stern.\-c@{src/wf\-\_\-stern.\-c}}
+}
+
+
+\-Implementation of \hyperlink{wf__stern_8h}{include/wf\-\_\-stern.\-h}.  
+
+\subsection*{Dependencies}
+
+{\ttfamily \#include $<$wf\-\_\-stern.\-h$>$}\*\\
+
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__stern_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{wf__stern_8c_a79ee922bb25d99869ec7f0fb94a109cc}{wf\-\_\-\-Stern} (const gsl\-\_\-vector $\ast$v, void $\ast$params)
+\item 
+double \hyperlink{wf__stern_8c_ad0f06aed633e1453adc6f85a5d1d35b2}{\-Optimal\-\_\-wf\-\_\-\-Stern} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Implementation of \hyperlink{wf__stern_8h}{include/wf\-\_\-stern.\-h}.
+
+\-Definition in file \hyperlink{wf__stern_8c}{wf\-\_\-stern.\-c}.
+
+\subsection{\-Function \-Documentation}
+\hypertarget{wf__stern_8c_a79ee922bb25d99869ec7f0fb94a109cc}{\index{wf\-\_\-stern.\-c@{wf\-\_\-stern.\-c}!wf\-\_\-\-Stern@{wf\-\_\-\-Stern}}
+\index{wf\-\_\-\-Stern@{wf\-\_\-\-Stern}!wf_stern.c@{wf\-\_\-stern.\-c}}
+\subsubsection[{wf\-\_\-\-Stern}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf wf\-\_\-\-Stern} (
+\begin{DoxyParamCaption}
+\item[{const gsl\-\_\-vector $\ast$}]{v, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__stern_8c_a79ee922bb25d99869ec7f0fb94a109cc}
+
+Work Factor of Stern's algorithm. Parameters l and p in v and k, w, N in params. 
+
+\-Implementation at line 29 of file wf\-\_\-stern.\-c.
+
+\hypertarget{wf__stern_8c_ad0f06aed633e1453adc6f85a5d1d35b2}{\index{wf\-\_\-stern.\-c@{wf\-\_\-stern.\-c}!\-Optimal\-\_\-wf\-\_\-\-Stern@{\-Optimal\-\_\-wf\-\_\-\-Stern}}
+\index{\-Optimal\-\_\-wf\-\_\-\-Stern@{\-Optimal\-\_\-wf\-\_\-\-Stern}!wf_stern.c@{wf\-\_\-stern.\-c}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-Stern}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-Stern} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__stern_8c_ad0f06aed633e1453adc6f85a5d1d35b2}
+
+\-Optimal \-Work \-Factor of \-Stern's algorithm. Parameters k, w, \-N in params. \-It saves \-Optimal \-Parameters l and p in params. 
+
+\-Implementation at line 53 of file wf\-\_\-stern.\-c.

@@ -1,0 +1,67 @@
+\hypertarget{wf__mmt_8h}{\section{include/wf\-\_\-mmt.h \-File \-Reference}
+\label{wf__mmt_8h}\index{include/wf\-\_\-mmt.\-h@{include/wf\-\_\-mmt.\-h}}
+}
+
+
+\-Library for calculation of \-M\-M\-T's \-Work \-Factor.  
+
+\subsection*{Dependencies}
+
+{\ttfamily \#include \char`\"{}entropy\-\_\-tools.\-h\char`\"{}}\*\\
+
+\-Include dependency graph for wf\-\_\-mmt.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__mmt_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__mmt_8h__dep__incl}
+\end{center}
+\end{figure}
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{wf__mmt_8h_afaaf2eaa35dcf780ab4405c3f6ce8707}{wf\-\_\-\-M\-M\-T} (const gsl\-\_\-vector $\ast$v, void $\ast$params)
+\item 
+double \hyperlink{wf__mmt_8h_a3d6e7472113ea6b9f6e05dd8800918e6}{\-Optimal\-\_\-wf\-\_\-\-M\-M\-T} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Library for calculation of \-M\-M\-T's \-Work \-Factor.  Definition in file \hyperlink{wf__mmt_8h}{wf\-\_\-mmt.\-h}.
+
+\subsection{\-Function \-Documentation}
+
+\hypertarget{wf__mmt_8h_afaaf2eaa35dcf780ab4405c3f6ce8707}{\index{wf\-\_\-mmt.\-h@{wf\-\_\-mmt.\-h}!wf\-\_\-\-M\-M\-T@{wf\-\_\-\-M\-M\-T}}
+\index{wf\-\_\-\-M\-M\-T@{wf\-\_\-\-M\-M\-T}!wf_mmt.h@{wf\-\_\-mmt.\-h}}
+\subsubsection[{wf\-\_\-\-M\-M\-T}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf wf\-\_\-\-M\-M\-T} (
+\begin{DoxyParamCaption}
+\item[{const gsl\-\_\-vector $\ast$}]{v, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__mmt_8h_afaaf2eaa35dcf780ab4405c3f6ce8707}
+
+\-Work \-Factor of \-M\-M\-T's algorithm. Parameters l and p in v and k, w, \-N in params. 
+
+\-Declaration at line 37 of file wf\-\_\-mmt.\-c.
+
+\hypertarget{wf__mmt_8h_a3d6e7472113ea6b9f6e05dd8800918e6}{\index{wf\-\_\-mmt.\-h@{wf\-\_\-mmt.\-h}!\-Optimal\-\_\-wf\-\_\-\-M\-M\-T@{\-Optimal\-\_\-wf\-\_\-\-M\-M\-T}}
+\index{\-Optimal\-\_\-wf\-\_\-\-M\-M\-T@{\-Optimal\-\_\-wf\-\_\-\-M\-M\-T}!wf_mmt.h@{wf\-\_\-mmt.\-h}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-M\-M\-T}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-M\-M\-T} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__mmt_8h_a3d6e7472113ea6b9f6e05dd8800918e6}
+
+\-Optimal \-Work \-Factor of \-M\-M\-T's algorithm. Parameters k, w, \-N in params. \-It saves \-Optimal \-Parameters l and p in params.
+
+\-Declaration at line 46 of file wf\-\_\-mmt.\-c.

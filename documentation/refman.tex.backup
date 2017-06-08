@@ -1,0 +1,190 @@
+\documentclass[a4paper]{book}
+\usepackage{amsmath}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+
+\newcommand{\WF}{\mathrm{WF}}
+
+
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\LARGE \-Ca\-Wo\-F }\\
+\vspace*{1cm}
+{\Large \-Reference Manual}\\
+\vspace*{0.5cm}
+{\large 10th January 2017 }\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Introduction}
+\section{State-of-Art}
+The (binary) generic decoding problem is a interesting subject in Coding Theory because, for example, it is very usefull for decoding random codes. But, in  Code-Based Cryptography is a vital issue, because the security of cryptosystem repose in the fact the generic decoding is a hard problem, so better resolving algorithm implies that these cryptosystem become less secure ( independently of the code the cryptosystem was based). Therefore, for a designer code-based cryptosystem is very important to know which is the exact mesure of the security of his cryptosystem against this kind of direct attack, with this reason in mind, we provide an simple program thats calculates the complexity of some very important generic decoding algorithms.
+
+One of the first solving algorithms was made by Prange in 1962, who introduced the notion of \emph{information set} and gave a probabilistic solution when the chosen information set is the right one. A remarkable improvement of this algorithm was by Stern in 1989, this algorithm subdivides the decoding problem in to two parts: in betting the information set and in solving a smaller decoding subproblem (another similar version of Dumer's algorithm in 1991). 
+
+Recently, we had improvements done by May, Meurer and Thomae in 2011, which uses the previous scheme and use the technique of representations ( by Joux and Becker) to solve the decoding subproblem. The next improvement was done Becker, Joux, May and Meurer in 2014; this algorithm improves against the resolution of the decoding subproblem. The last improvement was due by May et Ozerov in 2015, their algorithm has a better technique to match the produced lists of the previous algorithm. 
+
+All these algorithms compete for the smallest \textbf{Work Factor}, this is the asymptotic expression of their optimal complexity. The common form of Work Factor is $2^{c\cdot n}$, where $n$ is the length of code and $c$ is a constant that depends only of the code rate, error rate and the algorithm. Therefore, the evolution of this algorithm consist in reducing the constant $c$ for a set of values of code rate and error rate, normally we examine the case where error rate is smaller of Gilbert-Varshamov's bound. The program calculates the constant $c$ for the mentioned algorithms. 
+
+\section{How to use}
+
+\textbf{CaWoF} uses \textbf{GSL} (GNU Scientific library) to minimize functions and solving equations in its calculations. Some Linux distributions containts precompilated binary packages of GSL or it could be from the GNU website. 
+
+After the installation of GSL, we only must unzip the file CaWoF.zip and use the command \texttt{MAKE} in the directory \verb+\CaWoF+. You can find the executable \texttt{cawof} in the directory \verb+\src+. 
+
+This program calculates the constant $c$ in the asymptotic expresion of the Work Factor for an algorithm and a code rate. For example, a simple execution (in command line) is
+{\footnotesize
+\begin{verbatim}..\CaWoF\src$ ./cawof -a BJMM -k 0.5
+The work factor of BJMM's algorithm is assymptotically 2^(0.0999852060n),
+when the code rate is 0.5000000000 and error rate is 0.1100278644
+\end{verbatim}
+}
+
+The default error rate is the Gilbert-Varshamov's bound (respect the given code rate), but the option \verb+-w+ let us choice any value between 0 and 1. For example, 
+
+{\footnotesize
+\begin{verbatim}..\CaWoF\src$ ./cawof -w 0.5 -a MMT -k 0.5
+The work factor of MMT's algorithm is assymptotically 2^(0.6225562489n),
+when the code rate is 0.5000000000 and error rate is 0.5000000000
+\end{verbatim}
+}
+
+However, error rate values greater than $1-k$ will not be analyzed. But, we can find polynomial behaviour in error rate near to $1-k$.
+
+Finally, there are more options and we invite you to discover them by the option \verb+-h+
+
+{\footnotesize
+\verb+..\CaWoF\src$ ./cawof -h+
+}
+
+\section{Acknowledgement}
+
+This program could be done (at this point) without the help, orientation and emphasis of my PhD. advisor Nicolas Sendrier. And, I cannot forget to thank the ethernal good mood in my project-team SECRET at INRIA-Paris. 
+
+\chapter{\-File \-Index}
+\input{files}
+
+\chapter{Theorical Aspects}
+
+In this chapter, we will describe briefly about the formulas to obtain the work factor of the presented algorithms: Prange, Stern, Dumer, MMT, BJMM and Nearest Neighbors (NN).  
+All of these algorithm are ISD algorithms, so they will have a \emph{sucess probability} $\mathcal{P}$\footnote{This is the probability that the chosen Information Set was the right one}, so we will repeat the principal instructions of these algorithms in a loop a number of times $\mathcal{P}^{-1}$. With the exception of Prange, this principal instructions are just the instruction to solve a decoding subproblem. Therefore we calculate the workfactor with a formula like that:
+$$ \WF_{\mathcal{A}}=\mathcal{P}^{-1} \mathcal{I} $$
+where $\mathcal{I}$ is the number of operations made inside the principal loop. For almost all cases, $\mathcal{I}$ will be the number of operations made by the subroutine which  solves the decoding subproblem. 
+
+
+\section{Prange's algorithm}
+
+We avoid the polynomial terms in the Prange's number of operations, so we will have $\mathcal{I}=1$ and the succes probability will be $\mathcal{P} =\binom{n-k}{w}/\binom{n}{w}$. Therefore
+
+$$\WF_{Prange}=\frac{\binom{n}{w}}{\binom{n-k}{w}}. $$
+
+\section{Stern's algorithm}
+In this algorithm and the next ones, $p$ will be the parameter to describes the weight of error in the decoding subproblem and $l$ means the length of syndrome. So the succes probability will be $\mathcal{P} =\binom{n-k-l}{w-p}\binom{k}{p}/\binom{n}{w}$. We include the number of operations and we obtain
+
+$$\WF_{Stern}=\frac{\binom{n}{w}}{\binom{n-k-l}{w-p}\binom{k}{p}}\Big(\sqrt{\binom{k}{p}}+\frac{\binom{k}{p}}{2^l}\Big).$$
+\section{Dumer's algorithm}
+From this ISD algorithm, the sucess probability will not change and it will be $\mathcal{P} = \binom{n-k-l}{w-p}\binom{k+l}{p}/\binom{n}{w} $. Therefore the workfactor will be 
+
+$$\WF_{Dumer}=\frac{\binom{n}{w}}{\binom{n-k-l}{w-p}\binom{k+l}{p}}\Big(\sqrt{\binom{k+l}{p}}+\frac{\binom{k+l}{p}}{2^l}\Big)$$ 
+\section{MMT Algorithm}
+The expression of Work Factor in its published article was
+$$\WF_{MMT}=\frac{\binom{n}{w}}{\binom{n-k-l}{w-p}\binom{k+l}{p}}\Big(\sqrt{\binom{k+l}{p/2}}+\frac{\binom{k+l}{p/2}}{2^{l_2}}+\frac{\binom{k+l}{p/2}^2}{2^{l+l_2}}\Big).$$ 
+But, we use simplify this expression by reducing an optimal case when $l_2=p$ (the number of representations). This choice comes from the fact the number of total must divided by the number of representations, in this way be obtain no repeated solutions to be tested.  Therefore, we use this reduced and eficiant version 
+$$\WF_{MMT}=\frac{\binom{n}{w}}{\binom{n-k-l}{w-p}\binom{k+l}{p}}\Big(\sqrt{\binom{k+l}{p/2}}+\frac{\binom{k+l}{p/2}}{2^{p}}+\frac{\binom{k+l}{p/2}^2}{2^{l+p}}\Big).$$ 
+\section{BJMM Algorithm}
+In this algorithm, we have $p_1, p2$ as the parameter of the lowers step of BJMM's algorithm. We denote the probability $\mu_2$ that two words of length $k+l$ with weight $p_2$ match into a word of weight $p_1$, respectly $\mu_1$and $\mu_2$. These probalities satisfy the relation
+$$\binom{k+l}{p_1}R_2=\mu_2\binom{k+l}{p_2} \qquad \mbox{ and } \qquad \binom{k+l}{p}R_1=\mu_1\binom{k+l}{p_1}, $$
+where $R_2$ is the number of representations of a word of lenght $k+l$ and weight $p_1$ comes from a match of two words of weight $p_2$, respectly $R_1$. Therefore, we have the final expresion
+  $$\WF_{BJMM}=\frac{\binom{n}{w}}{\binom{n-k-l}{w-p}}\Big(\frac{ \sqrt{\binom{k+l}{p_2}}  }{\binom{k+l}{p}}+\frac{\binom{k+l}{p_1}}{\mu_2\binom{k+l}{p_2}\binom{k+l}{p}} +\frac{1}{\mu_2\mu_1\binom{k+l}{p_1}}+\frac{1}{\mu_12^l}\Big).$$ 
+
+\section{NN Algorithm}
+We use exactly the same expression than in the published article
+
+ $$\WF_{BJMM}=\frac{\binom{n}{w}}{\binom{n-k-l}{w-p}\binom{k+l}{p}}\Big( \sqrt{\binom{k+l}{p_2}}  +\frac{\binom{k+l}{p_2}}{ 2^{l_2}} + \frac{\binom{k+l}{p_2}^2}{ 2^{l+l_2}}+ 2^\mu+ 2^{y(1-k-l)}\Big).$$ 
+where 
+$$\mu=\binom{k+l}{p_1}/2^l \qquad\mbox{ and } \qquad y=(1-\gamma)\Big(1-h\big( h^{-1}(1-\frac{\mu}{1-k-l}) -\frac{\gamma}{2}\big) / (1-\gamma) \Big)$$
+with $\gamma=\frac{1-k-l}{w-p}$ and $h$ as binary entropy function.
+\section{When there are more than one solution}
+This special case is reduced just to change the probability $\mathcal{P}$ by the general one
+$$\mathcal{P}^*=\max\{1,\mathcal{N}*\mathcal{P}\},$$
+here $\mathcal{N}$ is the number of solutions and $\mathcal{P}$ is the respective probability of the algorithm in the standart case. If the weight in the decoding problem is bigger than the Gilbert-Vershamov bound, then the number of solution could be calculated by $\binom{w}{n}/ 2^{n-k} $. 
+
+\section{Implementation of formulas}
+
+To describe these work factors, we need some notations and conventions. We denote as $n$ the lenght of code and we will describe all the others values as quotient by $n$, for example  $k$ will be denotes the \emph{code rate} and $w$ its \emph{error rate}. In the same way, we represent the values for the parameters of an algorithm by a quotient of its value ( in the algorithm) by $n$. For example, $p$ will be the quotient between the weight of the error to find in the subroutine of the algorithm and $n$. We do the same for the parameters $l$, $p_1$ and $p_2$.
+
+\chapter{\-Data \-Structure \-Documentation}
+\input{structwf__params}
+\chapter{\-File \-Documentation}
+\input{behaviour_8c}
+\input{bound_8c}
+\input{bound__function_8h}
+\input{entropy__tools_8h}
+\input{wf__bjmm_8h}
+\input{wf__dumer_8h}
+\input{wf__mmt_8h}
+\input{wf__nn_8h}
+\input{wf__prange_8h}
+\input{wf__stern_8h}
+\input{bound__function_8c}
+\input{cawof_8c}
+\input{cawof_8h}
+\input{entropy__tools_8c}
+\input{wf__bjmm_8c}
+\input{wf__dumer_8c}
+\input{wf__mmt_8c}
+\input{wf__nn_8c}
+\input{wf__prange_8c}
+\input{wf__stern_8c}
+\printindex
+\end{document}

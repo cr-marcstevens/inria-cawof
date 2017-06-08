@@ -1,0 +1,196 @@
+\hypertarget{entropy__tools_8h}{\section{include/entropy\-\_\-tools.h \-File \-Reference}
+\label{entropy__tools_8h}\index{include/entropy\-\_\-tools.\-h@{include/entropy\-\_\-tools.\-h}}
+}
+
+
+\-Auxiliary library for calculation of \-Work \-Factor.  
+
+\subsection*{Libraries}
+{\ttfamily \#include $<$stdlib.\-h$>$}\*\\
+{\ttfamily \#include $<$math.\-h$>$}\*\\
+{\ttfamily \#include $<$stdarg.\-h$>$}\*\\
+{\ttfamily \#include $<$gsl/gsl\-\_\-errno.\-h$>$}\*\\
+{\ttfamily \#include $<$gsl/gsl\-\_\-math.\-h$>$}\*\\
+{\ttfamily \#include $<$gsl/gsl\-\_\-roots.\-h$>$}\*\\
+{\ttfamily \#include $<$gsl/gsl\-\_\-multimin.\-h$>$}\*\\
+
+\-Include dependency graph for entropy\-\_\-tools.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entropy__tools_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entropy__tools_8h__dep__incl}
+\end{center}
+\end{figure}
+
+
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structwf__params}{wf\-\_\-params}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{entropy__tools_8h_ac4be1977864445c9d3676c1caf020435}{min} (double x, double y)
+\item 
+double \hyperlink{entropy__tools_8h_aceeb951e1b17504f8d543719bd202818}{max} (int num,...)
+\item 
+double \hyperlink{entropy__tools_8h_a990759dbbe88d82fc69c6800d5951e94}{entropy} (double x)
+\item 
+double \hyperlink{entropy__tools_8h_a6177deb9e0879434f5faf04e0bacbc60}{dif\-\_\-entropy} (double x, void $\ast$params)
+\item 
+double \hyperlink{entropy__tools_8h_a982f069270a89ba48bcf6f1094664de9}{binomial} (double x, double y)
+\item 
+double \hyperlink{entropy__tools_8h_a58658edd80dde5f9f1f3dfb0ef5c3ad0}{entropy\-\_\-df} (double x, void $\ast$params)
+\item 
+void \hyperlink{entropy__tools_8h_a97ccbb83b56c2e90f48e07e6a97dabb0}{entropy\-\_\-fdf} (double x, void $\ast$params, double $\ast$y, double $\ast$dy)
+\item 
+double \hyperlink{entropy__tools_8h_afbd7396514b366c122f2021ca8820bce}{entropy\-\_\-inverse} (double y)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Auxiliary library for calculation of \-Work \-Factor. \-This \-Library contains the structure \hyperlink{structwf__params}{wf\-\_\-params} which comunicate several parameters in the optimization of several work factors. 
+
+\-Definition in file \hyperlink{entropy__tools_8h_source}{entropy\-\_\-tools.\-h}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{entropy__tools_8h_a982f069270a89ba48bcf6f1094664de9}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!binomial@{binomial}}
+\index{binomial@{binomial}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{binomial}]{\setlength{\rightskip}{0pt plus 5cm}{\bf binomial} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_a982f069270a89ba48bcf6f1094664de9}
+
+
+\-This function approximates \-Binomial coefficient by entropy function. 
+
+
+
+\-Definition at line 65 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_a6177deb9e0879434f5faf04e0bacbc60}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!dif\-\_\-entropy@{dif\-\_\-entropy}}
+\index{dif\-\_\-entropy@{dif\-\_\-entropy}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{dif\-\_\-entropy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dif\-\_\-entropy} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_a6177deb9e0879434f5faf04e0bacbc60}
+
+
+\-The diference entropy(x)-\/params. 
+
+
+
+\-Definition at line 73 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_a990759dbbe88d82fc69c6800d5951e94}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!entropy@{entropy}}
+\index{entropy@{entropy}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{entropy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf entropy} (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_a990759dbbe88d82fc69c6800d5951e94}
+
+
+\-This function calculates the (binary) entropy. 
+
+
+
+\-Definition at line 57 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_a58658edd80dde5f9f1f3dfb0ef5c3ad0}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!entropy\-\_\-df@{entropy\-\_\-df}}
+\index{entropy\-\_\-df@{entropy\-\_\-df}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{entropy\-\_\-df}]{\setlength{\rightskip}{0pt plus 5cm}{\bf entropy\-\_\-df} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_a58658edd80dde5f9f1f3dfb0ef5c3ad0}
+
+
+\-Derivate of entropy function. 
+
+
+
+\-Definition at line 82 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_a97ccbb83b56c2e90f48e07e6a97dabb0}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!entropy\-\_\-fdf@{entropy\-\_\-fdf}}
+\index{entropy\-\_\-fdf@{entropy\-\_\-fdf}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{entropy\-\_\-fdf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf entropy\-\_\-fdf} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{void $\ast$}]{params, }
+\item[{double $\ast$}]{y, }
+\item[{double $\ast$}]{dy}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_a97ccbb83b56c2e90f48e07e6a97dabb0}
+
+
+\-Obtains the dif\-\_\-entropy function and its derivate. 
+
+
+
+\-Definition at line 88 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_afbd7396514b366c122f2021ca8820bce}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!entropy\-\_\-inverse@{entropy\-\_\-inverse}}
+\index{entropy\-\_\-inverse@{entropy\-\_\-inverse}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{entropy\-\_\-inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf entropy\-\_\-inverse} (
+\begin{DoxyParamCaption}
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_afbd7396514b366c122f2021ca8820bce}
+
+
+\-Obtains the inverse of entropy function and return a real in \mbox{[}0,0.\-5\mbox{]}. 
+
+
+
+\-Definition at line 96 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_aceeb951e1b17504f8d543719bd202818}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!max@{max}}
+\index{max@{max}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf max} (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_aceeb951e1b17504f8d543719bd202818}
+
+
+\-Maximum of num double values. 
+
+
+
+\-Definition at line 28 of file entropy\-\_\-tools.\-c.
+
+\hypertarget{entropy__tools_8h_ac4be1977864445c9d3676c1caf020435}{\index{entropy\-\_\-tools.\-h@{entropy\-\_\-tools.\-h}!min@{min}}
+\index{min@{min}!entropy_tools.h@{entropy\-\_\-tools.\-h}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf min} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{entropy__tools_8h_ac4be1977864445c9d3676c1caf020435}
+
+
+\-Minimum of two double values. 
+
+
+
+\-Definition at line 49 of file entropy\-\_\-tools.\-c.
+
