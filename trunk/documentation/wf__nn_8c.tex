@@ -1,0 +1,81 @@
+\hypertarget{wf__nn_8c}{\section{src/wf\-\_\-nn.c \-File \-Reference}
+\label{wf__nn_8c}\index{src/wf\-\_\-nn.\-c@{src/wf\-\_\-nn.\-c}}
+}
+
+
+\-Implementation of \hyperlink{wf__nn_8h}{include/wf\-\_\-nn.\-h}.  
+
+\subsection*{Dependencies}
+
+{\ttfamily \#include $<$wf\-\_\-nn.\-h$>$}\*\\
+
+\-Include dependency graph for wf\-\_\-nn.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__nn_8c__incl}
+\end{center}
+\end{figure}
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{wf__nn_8c_a8dfefc665bca9dae6c43d725c23e6744}{wf\-\_\-\-N\-N} (double p2, void $\ast$paramslpp1)
+\item 
+double \hyperlink{wf__nn_8c_ad2f6d42b4446e77ad8c5d132f7535383}{\-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p} (const gsl\-\_\-vector $\ast$v, void $\ast$params)
+\item 
+double \hyperlink{wf__nn_8c_aabe262ad8c85dbe0c434cba3463bd955}{\-Optimal\-\_\-wf\-\_\-\-N\-N} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Implementation of \hyperlink{wf__nn_8h}{include/wf\-\_\-nn.\-h}. 
+
+\-Definition in file \hyperlink{wf__nn_8c}{wf\-\_\-nn.\-c}.
+
+
+
+\subsection{\-Function \-Documentation}
+
+\hypertarget{wf__nn_8c_a8dfefc665bca9dae6c43d725c23e6744}{\index{wf\-\_\-nn.\-c@{wf\-\_\-nn.\-c}!wf\-\_\-\-N\-N@{wf\-\_\-\-N\-N}}
+\index{wf\-\_\-\-N\-N@{wf\-\_\-\-N\-N}!wf_nn.c@{wf\-\_\-nn.\-c}}
+\subsubsection[{wf\-\_\-\-N\-N}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf wf\-\_\-\-N\-N} (
+\begin{DoxyParamCaption}
+\item[{double}]{p2, }
+\item[{void $\ast$}]{paramslpp1}
+\end{DoxyParamCaption}
+)}}\label{wf__nn_8c_a8dfefc665bca9dae6c43d725c23e6744}
+
+
+\-Work \-Factor of \-Nearest \-Neighbord's algorithm. Parameters k, w, \-N, l ,p, p1 in paramslpp1.
+
+\-Implementation at line 29 of file wf\-\_\-nn.\-c.
+
+\hypertarget{wf__nn_8c_ad2f6d42b4446e77ad8c5d132f7535383}{\index{wf\-\_\-nn.\-c@{wf\-\_\-nn.\-c}!\-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p@{\-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p}}
+\index{\-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p@{\-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p}!wf_nn.c@{wf\-\_\-nn.\-c}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-N\-N\-\_\-p} (
+\begin{DoxyParamCaption}
+\item[{const gsl\-\_\-vector $\ast$}]{v, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__nn_8c_ad2f6d42b4446e77ad8c5d132f7535383}
+
+
+\-Optimal \-Work \-Factor of \-Nearest \-Neighbord's algorithm for l, p fixed. Parameters l and p in v and k, w, \-N in params. \-It saves \-Optimal \-Parameters p2 in paramslp ( p1 is chosen from l and p).
+
+\-Implementation at line 62 of file wf\-\_\-nn.\-c.
+
+
+
+\hypertarget{wf__nn_8c_aabe262ad8c85dbe0c434cba3463bd955}{\index{wf\-\_\-nn.\-c@{wf\-\_\-nn.\-c}!\-Optimal\-\_\-wf\-\_\-\-N\-N@{\-Optimal\-\_\-wf\-\_\-\-N\-N}}
+\index{\-Optimal\-\_\-wf\-\_\-\-N\-N@{\-Optimal\-\_\-wf\-\_\-\-N\-N}!wf_nn.c@{wf\-\_\-nn.\-c}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-N\-N}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-N\-N} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__nn_8c_aabe262ad8c85dbe0c434cba3463bd955}
+
+
+\-Optimal \-Work \-Factor of \-Nearest \-Neighbord's algorithm. Parameters k, w, \-N in params. \-It saves \-Optimal \-Parameters l, p, p1 and p2 in params. 
+
+\-Implementation at line 122 of file wf\-\_\-nn.\-c.

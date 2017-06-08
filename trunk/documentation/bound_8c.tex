@@ -1,0 +1,98 @@
+\hypertarget{bound_8c}{\section{examples/bound.c}
+\label{bound_8c}\index{examples/bound.\-c@{examples/bound.\-c}}
+}
+
+\-Auxilairy program which calculates the index a of the bound fonction.  
+\subsection*{Dependencies}
+
+{\ttfamily \#include $<$entropy\-\_\-tools.\-h$>$}\*\\
+{\ttfamily \#include $<$bound\-\_\-function.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-prange.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-stern.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-dumer.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-mmt.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-bjmm.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-nn.\-h$>$}\*\\
+{\ttfamily \#include $<$stdio.\-h$>$}\*\\
+{\ttfamily \#include $<$getopt.\-h$>$}\*\\
+
+\-Include dependency graph for bound.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bound_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{bound_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+
+\item 
+void  \hyperlink{bound_8c_r0ddf1224851353fc92bfbff6f499fa97}{usage} (void)
+\end{DoxyCompactItemize}
+
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\-F\-I\-L\-E $\ast$ \hyperlink{bound_8c_aa3f2c1d3035c367b8891e613934cac98}{streamout}
+\item 
+\hyperlink{structwf__params}{wf\-\_\-params} \hyperlink{bound_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}{wfp}
+\item 
+double($\ast$ \hyperlink{bound_8c_a2254ed7d4ba79ef4b09f6801626aa1db}{wf\-\_\-algo} )(\hyperlink{structwf__params}{wf\-\_\-params} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Auxilairy program which calculates the index a of the bound fonction. \-This program takes a generic decoding algorithm algo as input and returns a in \mbox{]}0,1\mbox{[} such that min \-B\-\_\-a = \-W\-F(algo) for many code rate k in \mbox{[}0,1\mbox{]} ( and error rate w as \-Gilbert \-Varshamov's bound ). 
+
+\-Definition in file \hyperlink{bound_8c}{bound.\-c}.
+
+\subsection{\-Function \-Documentation}
+\hypertarget{bound_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{bound.\-c@{bound.\-c}!main@{main}}
+\index{main@{main}!bound.c@{bound.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{bound_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+\-It calculates the index a of the bound fonction.
+
+\-Definition at line 82 of file bound.\-c.
+
+\hypertarget{bound_8c_r0ddf1224851353fc92bfbff6f499fa97}{\index{bound.\-c@{bound.\-c}!usage@{usage}}
+\index{usage@{usage}!bound.c@{bound.\-c}}
+\subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf usage} ( void )}}\label{bound_8c_r0ddf1224851353fc92bfbff6f499fa97}
+
+It prints help.
+
+\-Definition at line 54 of file bound.c.
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{bound_8c_aa3f2c1d3035c367b8891e613934cac98}{\index{bound.\-c@{bound.\-c}!streamout@{streamout}}
+\index{streamout@{streamout}!bound.c@{bound.\-c}}
+\subsubsection[{streamout}]{\setlength{\rightskip}{0pt plus 5cm}\-F\-I\-L\-E$\ast$ {\bf streamout}}}\label{bound_8c_aa3f2c1d3035c367b8891e613934cac98}
+
+
+\-This variable will saves in a file the obtained values after optimization of wf.
+
+\-Definition at line 44 of file bound.\-c.
+
+\hypertarget{bound_8c_a2254ed7d4ba79ef4b09f6801626aa1db}{\index{bound.\-c@{bound.\-c}!wf\-\_\-algo@{wf\-\_\-algo}}
+\index{wf\-\_\-algo@{wf\-\_\-algo}!bound.c@{bound.\-c}}
+\subsubsection[{wf\-\_\-algo}]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$  {\bf wf\-\_\-algo})({\bf wf\-\_\-params} $\ast$)}}\label{bound_8c_a2254ed7d4ba79ef4b09f6801626aa1db}
+
+\-This variable saves the adress of the optimization function of work factor.
+
+\-Definition at line 45 of file bound.\-c.
+
+\hypertarget{bound_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}{\index{bound.\-c@{bound.\-c}!wfp@{wfp}}
+\index{wfp@{wfp}!bound.c@{bound.\-c}}
+\subsubsection[{wfp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wf\-\_\-params} {\bf wfp}}}\label{bound_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}
+
+\-This variable contains the value of k, w, wf/w, l, p, p1, p2 after optimization of wf.
+
+\-Definition at line 46 of file bound.\-c.

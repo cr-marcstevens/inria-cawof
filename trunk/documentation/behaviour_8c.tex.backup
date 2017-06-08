@@ -1,0 +1,94 @@
+\hypertarget{behaviour_8c}{\section{examples/behaviour.c}
+\label{behaviour_8c}\index{examples/behaviour.\-c@{examples/behaviour.\-c}}
+}
+
+\-Example program, it shows wf/w vs w.  
+\subsection*{\-Libraries}
+
+{\ttfamily \#include $<$entropy\-\_\-tools.\-h$>$}\* \\
+{\ttfamily \#include $<$wf\-\_\-prange.\-h$>$}\* \\
+{\ttfamily \#include $<$wf\-\_\-stern.\-h$>$}\* \\
+{\ttfamily \#include $<$wf\-\_\-dumer.\-h$>$}\* \\
+{\ttfamily \#include $<$wf\-\_\-mmt.\-h$>$}\* \\
+{\ttfamily \#include $<$wf\-\_\-bjmm.\-h$>$}\* \\
+{\ttfamily \#include $<$wf\-\_\-nn.\-h$>$}\* \\
+{\ttfamily \#include $<$stdlib.\-h$>$}\* \\
+{\ttfamily \#include $<$stdio.\-h$>$}\* \\
+{\ttfamily \#include $<$stdbool.\-h$>$}\* \\
+{\ttfamily \#include $<$string.\-h$>$}\* 
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{behaviour_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+
+\item 
+void \hyperlink{behaviour_8c_r0ddf1224851353fc92bfbff6f499fa97}{usage} ( void )
+\end{DoxyCompactItemize}
+
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\-F\-I\-L\-E $\ast$ \hyperlink{behaviour_8c_aa3f2c1d3035c367b8891e613934cac98}{streamout}
+\item 
+\hyperlink{structwf__params}{wf\-\_\-params} \hyperlink{behaviour_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}{wfp}
+\item 
+double($\ast$ \hyperlink{behaviour_8c_a2254ed7d4ba79ef4b09f6801626aa1db}{wf\-\_\-algo} )(\hyperlink{structwf__params}{wf\-\_\-params} $\ast$)
+\item 
+char \hyperlink{behaviour_8c_ad7c92c302d8095e7b78a691e451ecf15}{algo} \mbox{[}20\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Example program, it shows wf/w vs w. \-For a code rate k, this program calculates wf/w respects the error rate w ( with values between 0 and \-Gilbert-\/\-Varshamov bound). \-We can see the wf/w becomes near to expect value -\/log\-\_\-2(1-\/k) when w approachs 0. 
+
+\-Definition in file \hyperlink{behaviour_8c_source}{behaviour.\-c}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{behaviour_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{behaviour.\-c@{behaviour.\-c}!main@{main}}
+\index{main@{main}!behaviour.c@{behaviour.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{behaviour_8c_a0ddf1224851353fc92bfbff6f499fa97}
+\-It shows wf/w vs w. Definition at line 63 of file behaviour.\-c.
+
+
+\hypertarget{behaviour_8c_r0ddf1224851353fc92bfbff6f499fa97}{\index{behaviour.\-c@{behaviour.\-c}!usage@{usage}}
+\index{usage@{usage}!behaviour.c@{behaviour.\-c}}
+\subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf usage} ( void )}}\label{behaviour_8c_r0ddf1224851353fc92bfbff6f499fa97}
+\-It shows help. Definition at line 54 of file behaviour.\-c.
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{behaviour_8c_ad7c92c302d8095e7b78a691e451ecf15}{\index{behaviour.\-c@{behaviour.\-c}!algo@{algo}}
+\index{algo@{algo}!behaviour.c@{behaviour.\-c}}
+\subsubsection[{algo}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf algo}\mbox{[}20\mbox{]}}}\label{behaviour_8c_ad7c92c302d8095e7b78a691e451ecf15}
+
+
+\-Definition at line 46 of file behaviour.\-c.
+
+\hypertarget{behaviour_8c_aa3f2c1d3035c367b8891e613934cac98}{\index{behaviour.\-c@{behaviour.\-c}!streamout@{streamout}}
+\index{streamout@{streamout}!behaviour.c@{behaviour.\-c}}
+\subsubsection[{streamout}]{\setlength{\rightskip}{0pt plus 5cm}\-F\-I\-L\-E$\ast$ {\bf streamout}}}\label{behaviour_8c_aa3f2c1d3035c367b8891e613934cac98}
+
+
+\-Definition at line 43 of file behaviour.\-c.
+
+\hypertarget{behaviour_8c_a2254ed7d4ba79ef4b09f6801626aa1db}{\index{behaviour.\-c@{behaviour.\-c}!wf\-\_\-algo@{wf\-\_\-algo}}
+\index{wf\-\_\-algo@{wf\-\_\-algo}!behaviour.c@{behaviour.\-c}}
+\subsubsection[{wf\-\_\-algo}]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$  {\bf wf\-\_\-algo})({\bf wf\-\_\-params} $\ast$)}}\label{behaviour_8c_a2254ed7d4ba79ef4b09f6801626aa1db}
+
+
+\-Definition at line 45 of file behaviour.\-c.
+
+\hypertarget{behaviour_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}{\index{behaviour.\-c@{behaviour.\-c}!wfp@{wfp}}
+\index{wfp@{wfp}!behaviour.c@{behaviour.\-c}}
+\subsubsection[{wfp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wf\-\_\-params} {\bf wfp}}}\label{behaviour_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}
+
+
+\-Definition at line 44 of file behaviour.\-c.
+

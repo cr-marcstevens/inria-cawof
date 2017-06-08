@@ -1,0 +1,116 @@
+\hypertarget{structwf__params}{\section{wf\-\_\-params \-Struct \-Reference}
+\label{structwf__params}\index{wf\-\_\-params@{wf\-\_\-params}}
+}
+
+
+\-Parameters of the decoding algorithms.  
+
+
+
+
+{\ttfamily \#include $<$entropy\-\_\-tools.\-h$>$}
+
+\subsection*{\-Data \-Fields}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{structwf__params_ac8a270bda1a0784095b5ec578129c28a}{k}
+\item 
+double \hyperlink{structwf__params_afb3248bab1c7ee0ad97e9d4c275b4c67}{w}
+\item 
+double \hyperlink{structwf__params_aed54e3f02ef7426fd92cd6e7e1cd181c}{\-N}
+\item 
+double \hyperlink{structwf__params_a59e80b8ba32c12c6d0a868f17a19ae48}{l}
+\item 
+double \hyperlink{structwf__params_aace2d484b0e3651abd108f04803d316c}{p}
+\item 
+double \hyperlink{structwf__params_afe3ec2bbc515ef1c2c03dccf567831f4}{p1}
+\item 
+double \hyperlink{structwf__params_afb3d783e05c27da8ea3c53c9d2e17af1}{p2}
+\item 
+double \hyperlink{structwf__params_a1031d0e0a97a340abfe0a6ab9e831045}{a}
+\item 
+double \hyperlink{structwf__params_a3d48e7e4501d1f62ef751e2643e37c51}{wf}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Parameters of the decoding algorithms. 
+
+\-One variable of this type will be use in any function about work factor to transfer the parameters of decoding algorithms. \-After the optimization of a function this struct saves the optimal parameters to achieve the \-Work \-Factor. 
+
+\-Definition at line 50 of file entropy\-\_\-tools.\-h.
+
+
+
+\subsection{\-Field \-Documentation}
+
+\begin{description}
+ 
+
+\hypertarget{structwf__params_ac8a270bda1a0784095b5ec578129c28a}{\index{wf\-\_\-params@{wf\-\_\-params}!k@{k}}
+\index{k@{k}!wf_params@{wf\-\_\-params}}
+\item[{k}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf k}}}\label{structwf__params_ac8a270bda1a0784095b5ec578129c28a}
+
+\-This is the code rate with values between 0 and 1.
+
+\hypertarget{structwf__params_afb3248bab1c7ee0ad97e9d4c275b4c67}{\index{wf\-\_\-params@{wf\-\_\-params}!w@{w}}
+\index{w@{w}!wf_params@{wf\-\_\-params}}
+\item[{w}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf w}}}\label{structwf__params_afb3248bab1c7ee0ad97e9d4c275b4c67}
+
+\-This is the error rate with values between 0 and 1.
+
+\hypertarget{structwf__params_aed54e3f02ef7426fd92cd6e7e1cd181c}{\index{wf\-\_\-params@{wf\-\_\-params}!\-N@{\-N}}
+\index{\-N@{\-N}!wf_params@{wf\-\_\-params}}
+\item[{\-N}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-N}}}\label{structwf__params_aed54e3f02ef7426fd92cd6e7e1cd181c}
+
+\-This is the binary logarithm of number of solutions of the decoding problem.
+
+\hypertarget{structwf__params_a59e80b8ba32c12c6d0a868f17a19ae48}{\index{wf\-\_\-params@{wf\-\_\-params}!l@{l}}
+\index{l@{l}!wf_params@{wf\-\_\-params}}
+\item[{l}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf l}}}\label{structwf__params_a59e80b8ba32c12c6d0a868f17a19ae48}
+
+
+\-Definition at line 51 of file entropy\-\_\-tools.\-h.
+
+
+\hypertarget{structwf__params_aace2d484b0e3651abd108f04803d316c}{\index{wf\-\_\-params@{wf\-\_\-params}!p@{p}}
+\index{p@{p}!wf_params@{wf\-\_\-params}}
+\item[{p}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf p}}}\label{structwf__params_aace2d484b0e3651abd108f04803d316c}
+
+
+\-Definition at line 51 of file entropy\-\_\-tools.\-h.
+
+\hypertarget{structwf__params_afe3ec2bbc515ef1c2c03dccf567831f4}{\index{wf\-\_\-params@{wf\-\_\-params}!p1@{p1}}
+\index{p1@{p1}!wf_params@{wf\-\_\-params}}
+\item[{p1}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf p1}}}\label{structwf__params_afe3ec2bbc515ef1c2c03dccf567831f4}
+
+
+\-Definition at line 51 of file entropy\-\_\-tools.\-h.
+
+\hypertarget{structwf__params_afb3d783e05c27da8ea3c53c9d2e17af1}{\index{wf\-\_\-params@{wf\-\_\-params}!p2@{p2}}
+\index{p2@{p2}!wf_params@{wf\-\_\-params}}
+\item[{p2}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf p2}}}\label{structwf__params_afb3d783e05c27da8ea3c53c9d2e17af1}
+
+
+\-Definition at line 51 of file entropy\-\_\-tools.\-h.
+
+
+
+\hypertarget{structwf__params_a3d48e7e4501d1f62ef751e2643e37c51}{\index{wf\-\_\-params@{wf\-\_\-params}!wf@{wf}}
+\index{wf@{wf}!wf_params@{wf\-\_\-params}}
+\item[{wf}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf wf}}}\label{structwf__params_a3d48e7e4501d1f62ef751e2643e37c51}
+
+
+\-Definition at line 51 of file entropy\-\_\-tools.\-h.
+
+\hypertarget{structwf__params_a1031d0e0a97a340abfe0a6ab9e831045}{\index{wf\-\_\-params@{wf\-\_\-params}!a@{a}}
+\index{a@{a}!wf_params@{wf\-\_\-params}}
+\item[{a}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf a}}}\label{structwf__params_a1031d0e0a97a340abfe0a6ab9e831045}
+
+
+\end{description}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{entropy__tools_8h}{entropy\-\_\-tools.\-h}\end{DoxyCompactItemize}

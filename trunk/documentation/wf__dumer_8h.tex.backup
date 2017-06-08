@@ -1,0 +1,67 @@
+\hypertarget{wf__dumer_8h}{\section{include/wf\-\_\-dumer.h \-File \-Reference}
+\label{wf__dumer_8h}\index{include/wf\-\_\-dumer.\-h@{include/wf\-\_\-dumer.\-h}}
+}
+
+\-Library for calculation of \-Dumer's \-Work \-Factor.  
+
+{\ttfamily \#include \char`\"{}entropy\-\_\-tools.\-h\char`\"{}}\*
+
+\-Include dependency graph for wf\-\_\-dumer.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__dumer_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{wf__dumer_8h__dep__incl}
+\end{center}
+\end{figure}
+
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{wf__dumer_8h_a5244b19be3abd3f78ed6cca7ecd7a01e}{wf\-\_\-\-Dumer} (const gsl\-\_\-vector $\ast$v, void $\ast$params)
+\item 
+double \hyperlink{wf__dumer_8h_a479daa36a2e80f4a1432e4d4b027f8a3}{\-Optimal\-\_\-wf\-\_\-\-Dumer} (\hyperlink{structwf__params}{wf\-\_\-params} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Library for calculation of \-Dumer's \-Work \-Factor. 
+
+\-Definition in file \hyperlink{wf__dumer_8h_source}{wf\-\_\-dumer.\-h}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{wf__dumer_8h_a479daa36a2e80f4a1432e4d4b027f8a3}{\index{wf\-\_\-dumer.\-h@{wf\-\_\-dumer.\-h}!\-Optimal\-\_\-wf\-\_\-\-Dumer@{\-Optimal\-\_\-wf\-\_\-\-Dumer}}
+\index{\-Optimal\-\_\-wf\-\_\-\-Dumer@{\-Optimal\-\_\-wf\-\_\-\-Dumer}!wf_dumer.h@{wf\-\_\-dumer.\-h}}
+\subsubsection[{\-Optimal\-\_\-wf\-\_\-\-Dumer}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Optimal\-\_\-wf\-\_\-\-Dumer} (
+\begin{DoxyParamCaption}
+\item[{{\bf wf\-\_\-params} $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__dumer_8h_a479daa36a2e80f4a1432e4d4b027f8a3}
+
+
+\-Definition at line 53 of file wf\-\_\-dumer.\-c.
+
+\hypertarget{wf__dumer_8h_a5244b19be3abd3f78ed6cca7ecd7a01e}{\index{wf\-\_\-dumer.\-h@{wf\-\_\-dumer.\-h}!wf\-\_\-\-Dumer@{wf\-\_\-\-Dumer}}
+\index{wf\-\_\-\-Dumer@{wf\-\_\-\-Dumer}!wf_dumer.h@{wf\-\_\-dumer.\-h}}
+\subsubsection[{wf\-\_\-\-Dumer}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf wf\-\_\-\-Dumer} (
+\begin{DoxyParamCaption}
+\item[{const gsl\-\_\-vector $\ast$}]{v, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}\label{wf__dumer_8h_a5244b19be3abd3f78ed6cca7ecd7a01e}
+
+
+\-Definition at line 29 of file wf\-\_\-dumer.\-c.
+

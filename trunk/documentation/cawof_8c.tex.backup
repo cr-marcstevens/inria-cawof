@@ -1,0 +1,140 @@
+\hypertarget{cawof_8c}{\section{src/cawof.c \-File \-Reference}
+\label{cawof_8c}\index{src/cawof.\-c@{src/cawof.\-c}}
+}
+
+
+\-Main program of calculation of \-Work \-Factor.  
+
+\subsection*{Libraries}
+
+{\ttfamily \#include \char`\"{}cawof.\-h\char`\"{}}\*\\
+{\ttfamily \#include $<$entropy\-\_\-tools.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-prange.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-stern.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-dumer.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-mmt.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-bjmm.\-h$>$}\*\\
+{\ttfamily \#include $<$wf\-\_\-nn.\-h$>$}\*\\
+{\ttfamily \#include $<$stdbool.\-h$>$}\*\\
+{\ttfamily \#include $<$stdlib.\-h$>$}\*\\
+{\ttfamily \#include $<$stdio.\-h$>$}\*\\
+{\ttfamily \#include $<$string.\-h$>$}\*\\
+{\ttfamily \#include $<$getopt.\-h$>$}\*\\
+
+Include dependency graph for cawof.\-c\-
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cawof_8c__incl}
+\end{center}
+\end{figure}
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{cawof_8c_c0ddf1224851353fc92bfbff6f499fa97}{version} (void)
+\item 
+void \hyperlink{cawof_8c_r0ddf1224851353fc92bfbff6f499fa97}{usage} (int status)
+\item 
+int \hyperlink{cawof_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{cawof_8c_ab3f078684998b83967d507d0f453f454}{verbose}
+\item 
+bool \hyperlink{cawof_8c_ae4426f467d61ae456b95844d4d9c2dcd}{quiet}
+\item 
+bool \hyperlink{cawof_8c_a5eba86123523ed35aa48ccbd19d1b77a}{format}
+\item 
+\hyperlink{structwf__params}{wf\-\_\-params} \hyperlink{cawof_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}{wfp}
+\item 
+char \hyperlink{cawof_8c_ad7c92c302d8095e7b78a691e451ecf15}{algo} \mbox{[}20\mbox{]}
+\item 
+double($\ast$ \hyperlink{cawof_8c_a2254ed7d4ba79ef4b09f6801626aa1db}{wf\-\_\-algo} )(\hyperlink{structwf__params}{wf\-\_\-params} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+Calculates of Work Factor of an ISD algorithm in the code rate and error rate. Default algorithm is BJMM, default code rate is 0.5 and defaut error rate is s Gilbert-Varshamov's bound. Available algorithms are PRANGE, STERN, DUMER, MMT, BJMM and NN.  
+
+\-Definition in file \hyperlink{cawof_8c_source}{cawof.\-c}.
+
+\subsection{\-Function \-Documentation}
+
+\hypertarget{cawof_8c_c0ddf1224851353fc92bfbff6f499fa97}{\index{cawof.\-c@{cawof.\-c}!version@{version}}
+\index{version@{version}!cawof.c@{cawof.\-c}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf version} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{cawof_8c_c0ddf1224851353fc92bfbff6f499fa97}
+
+Print the version of program. Definition at line 56 of file cawof.\-c.
+
+
+\hypertarget{cawof_8c_r0ddf1224851353fc92bfbff6f499fa97}{\index{cawof.\-c@{cawof.\-c}!usage@{usage}}
+\index{usage@{usage}!cawof.c@{cawof.\-c}}
+\subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf usage} (
+\begin{DoxyParamCaption}
+\item[{int}]{status}
+\end{DoxyParamCaption}
+)}}\label{cawof_8c_r0ddf1224851353fc92bfbff6f499fa97}
+
+Print the help of program. Definition at line 68 of file cawof.\-c.
+
+\hypertarget{cawof_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{cawof.\-c@{cawof.\-c}!main@{main}}
+\index{main@{main}!cawof.c@{cawof.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{cawof_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+Calculates of Work Factor of an ISD algorithm in the code rate and error rate. Definition at line 96 of file cawof.\-c.
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{cawof_8c_ad7c92c302d8095e7b78a691e451ecf15}{\index{cawof.\-c@{cawof.\-c}!algo@{algo}}
+\index{algo@{algo}!cawof.c@{cawof.\-c}}
+\subsubsection[{algo}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf algo}\mbox{[}20\mbox{]}}}\label{cawof_8c_ad7c92c302d8095e7b78a691e451ecf15}
+
+It saves the name of algorithm to analyze .Definition at line 48 of file cawof.\-c.
+
+\hypertarget{cawof_8c_a5eba86123523ed35aa48ccbd19d1b77a}{\index{cawof.\-c@{cawof.\-c}!format@{format}}
+\index{format@{format}!cawof.c@{cawof.\-c}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf format}}}\label{cawof_8c_a5eba86123523ed35aa48ccbd19d1b77a}
+
+
+Decides if the work factor is expressed in terms of w or n. Definition at line 46 of file cawof.\-c.
+
+\hypertarget{cawof_8c_ae4426f467d61ae456b95844d4d9c2dcd}{\index{cawof.\-c@{cawof.\-c}!quiet@{quiet}}
+\index{quiet@{quiet}!cawof.c@{cawof.\-c}}
+\subsubsection[{quiet}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf quiet}}}\label{cawof_8c_ae4426f467d61ae456b95844d4d9c2dcd}
+
+
+Decides if the program prints explanation of results. Definition at line 46 of file cawof.\-c.
+
+\hypertarget{cawof_8c_ab3f078684998b83967d507d0f453f454}{\index{cawof.\-c@{cawof.\-c}!verbose@{verbose}}
+\index{verbose@{verbose}!cawof.c@{cawof.\-c}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf verbose}}}\label{cawof_8c_ab3f078684998b83967d507d0f453f454}
+
+
+Decides if the program prints the values of optimal parameters for the algorithm. Definition at line 46 of file cawof.\-c.
+
+\hypertarget{cawof_8c_a2254ed7d4ba79ef4b09f6801626aa1db}{\index{cawof.\-c@{cawof.\-c}!wf\-\_\-algo@{wf\-\_\-algo}}
+\index{wf\-\_\-algo@{wf\-\_\-algo}!cawof.c@{cawof.\-c}}
+\subsubsection[{wf\-\_\-algo}]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$  {\bf wf\-\_\-algo})({\bf wf\-\_\-params} $\ast$)}}\label{cawof_8c_a2254ed7d4ba79ef4b09f6801626aa1db}
+
+
+It contains the optimization function to use. Definition at line 45 of file cawof.\-c.
+
+\hypertarget{cawof_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}{\index{cawof.\-c@{cawof.\-c}!wfp@{wfp}}
+\index{wfp@{wfp}!cawof.c@{cawof.\-c}}
+\subsubsection[{wfp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wf\-\_\-params} {\bf wfp}}}\label{cawof_8c_aea89d30d6c8cc9ac79ded86e7f78d3ad}
+
+
+It contains the parameters of coding algorithm. Definition at line 49 of file cawof.\-c.
+
