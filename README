@@ -1,3 +1,12 @@
+# CAWOF
+
+## InriaForge project 
+
+This github repository is a clone of the InriaForge SVN project CAWOF:
+https://gforge.inria.fr/projects/cawof/
+
+## Description
+
 This software is Calculator of asymptotic complexity decoding algorithms such as
  Prange, Stern, Dummer, MMT and BJMM for a code rate k and an error w equal to 
 the Gilbert-Varshamov bound respect to k. You can change the error w, but it 
